@@ -1,0 +1,52 @@
+
+MÉTODOS DE ONGOOSE
+
+mongoose.connect()
+Descripción: Conecta tu app con la base de datos MongoDB.
+Uso: mongoose.connect("URL_DEL_CLUSTER")
+Significado: Estoy enchufando mi app con la base de datos.
+
+new mongoose.Schema()
+Descripción: Define la estructura (molde) de los documentos de la colección.
+Uso: const schema = new mongoose.Schema({nombre: String, edad: Number})
+Significado: Molde para definir cómo deben ser mis superhéroes.
+
+mongoose.model()
+Descripción: Crea un modelo basado en el esquema.
+Uso: const SuperHero = mongoose.model("SuperHero", schema)
+Significado: Herramienta para interactuar con mi colección.
+
+.save()
+Descripción: Guarda un nuevo documento en la base de datos.
+Uso: await documento.save()
+Significado: Guardá este nuevo dato en la base.
+
+.updateOne()
+Descripción: Modifica el primer documento que cumpla con la condición.
+Uso: await SuperHero.updateOne({ filtro }, { $set: { campo: valor } })
+Significado: Buscá uno, y actualizá lo que te diga.
+
+.deleteOne()
+Descripción: Elimina el primer documento que cumpla con la condición.
+Uso: await SuperHero.deleteOne({ filtro })
+Significado: Borrá uno que coincida con esto.
+
+.find()
+Descripción: Busca todos los documentos que cumplan la condición.
+Uso: const resultados = await SuperHero.find({ filtro })
+Significado: Buscá todos los que cumplan esto.
+
+await
+Descripción: Espera a que una operación asincrónica termine antes de seguir.
+Uso: Solo se usa dentro de funciones async.
+Significado: Esperá el resultado antes de seguir.
+
+async
+Descripción: Convierte una función en asincrónica (permite usar await).
+Uso: async function miFuncion() { await algo() }
+Significado: Esta función hace cosas que pueden tardar.
+
+$set
+Descripción: Operador de MongoDB para indicar qué campos actualizar.
+Uso: { $set: { campo: nuevoValor } }
+Significado: Actualizá solo estos campos.

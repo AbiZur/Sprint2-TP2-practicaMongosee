@@ -87,7 +87,7 @@ deleteSuperHero("Capitán Mala Paka");
 */
 
 
-//Método 4: BUSCAR
+//Método 4: BUSCAR -> .find
 /*
 async function findSuperHeroes(){
   const heroes = await SuperHero.find({planetaOrigen: 'Tierra'});

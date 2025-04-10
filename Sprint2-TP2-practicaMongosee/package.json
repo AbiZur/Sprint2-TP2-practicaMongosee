@@ -21,7 +21,6 @@
   "author": "debora zurita",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0",
     "mongoose": "^8.13.2"
   }
 }
